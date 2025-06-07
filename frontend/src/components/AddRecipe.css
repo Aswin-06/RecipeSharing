@@ -1,0 +1,83 @@
+.add-recipe-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-title {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 9px 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #005eff;
+  background-color: #f0f8ff;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.btn-add:hover {
+  background-color: #1e7e34;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.ingredients-list {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ingredient-tag {
+  background-color: #e0f0ff;
+  color: #007bff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,44 @@
+.cont {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 360px;
+}
+
+.cont h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.cont h4 {
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button button:hover {
+    background-color: #0056b3;
+}
