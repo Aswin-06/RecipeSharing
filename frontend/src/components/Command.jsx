@@ -44,7 +44,7 @@ function Command()
                     try {
                         if(token==="")
                             navigate("/")
-                        await axios.post(`http://localhost:8080/api/command/${id}`,data,{
+                        await axios.post(`https://recipesharing-kv1d.onrender.com/api/command/${id}`,data,{
                             headers:
                             {
                                 Authorization:`Bearer ${token}`,

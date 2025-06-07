@@ -17,7 +17,7 @@ function Home()
                 navigate("/")
             else{
                 try {
-                    const response = await axios.get("http://localhost:8080/api/recipe",{
+                    const response = await axios.get("https://recipesharing-kv1d.onrender.com/api/recipe",{
                         headers:{
                             Authorization:`Bearer ${token}`
                         }

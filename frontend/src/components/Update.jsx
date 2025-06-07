@@ -18,7 +18,7 @@ function Update()
             else
             {
                 try {
-                    const response = await axios.get(`http://localhost:8080/api/recipe/${id}`,{
+                    const response = await axios.get(`https://recipesharing-kv1d.onrender.com/api/recipe/${id}`,{
                         headers:{
                             Authorization:`Bearer ${token}`
                         }
@@ -72,7 +72,7 @@ function Update()
                         }
                         else{
                             try {
-                                await axios.put(`http://localhost:8080/api/recipe/${id}`,data,{
+                                await axios.put(`https://recipesharing-kv1d.onrender.com/api/recipe/${id}`,data,{
                                     headers:{
                                         Authorization:`Bearer ${token}`,
                                         "Content-Type":"application/json"

@@ -15,7 +15,7 @@ function UserDetails()
             if(token==="")
                 navigate("/")
             try {
-                const response = await axios.get(`http://localhost:8080/api/recipe/user/${id}`,{
+                const response = await axios.get(`https://recipesharing-kv1d.onrender.com/api/recipe/user/${id}`,{
                     headers:{
                         Authorization:`Bearer ${token}`
                     }

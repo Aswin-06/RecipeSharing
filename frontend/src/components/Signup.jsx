@@ -31,7 +31,7 @@ function Signup()
                             else
                             {
                                 try {
-                                    await axios.post("http://localhost:8080/user/register",data);
+                                    await axios.post("https://recipesharing-kv1d.onrender.com/user/register",data);
                                     navigate("/login")
                                 } catch (error) {
                                     alert(error.response.data);

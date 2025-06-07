@@ -31,7 +31,7 @@ function Login()
                             else
                             {
                                 try {
-                                    const response = await axios.post("http://localhost:8080/user/login",data);
+                                    const response = await axios.post("https://recipesharing-kv1d.onrender.com/user/login",data);
                                     localStorage.setItem("id",response.data.id);
                                     localStorage.setItem("token",response.data.token);
                                     navigate("/home")

@@ -19,7 +19,7 @@ function Details(){
             else
             {
                 try {
-                    const response = await axios.get(`http://localhost:8080/api/recipe/${id}`,{
+                    const response = await axios.get(`https://recipesharing-kv1d.onrender.com/api/recipe/${id}`,{
                         headers:{
                             Authorization:`Bearer ${token}`
                         }
@@ -77,7 +77,7 @@ function Details(){
                     {
                         e.preventDefault();
                         try {
-                            await axios.delete(`http://localhost:8080/api/recipe/${id}`,{
+                            await axios.delete(`https://recipesharing-kv1d.onrender.com/api/recipe/${id}`,{
                                 headers:{
                                     Authorization:`Bearer ${token}`
                                 }

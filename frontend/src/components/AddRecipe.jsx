@@ -68,7 +68,7 @@ function AddRecipe()
                             try {
                                 const data1={...data,createdBy:id};
                                 const data2={...data1,ingrediants:ingre}
-                                await axios.post("http://localhost:8080/api/recipe",data2,{
+                                await axios.post("https://recipesharing-kv1d.onrender.com/api/recipe",data2,{
                                     headers:{
                                         Authorization:`Bearer ${token}`,
                                         "Content-Type":"application/json"
