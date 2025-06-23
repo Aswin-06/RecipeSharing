@@ -14,11 +14,6 @@ exports.putRecipe=async (req,res) => {
 }
 
 exports.delRecipe=async (req,res) => {
-    if(!req || !req.body)
-    {
-        console.log(req.body);
-        return res.status(404).send("body not found");
-    }
     const recipe=await getDataByID(req.params.id);
     if(!recipe.exists)
     {
