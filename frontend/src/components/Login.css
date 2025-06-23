@@ -4,6 +4,7 @@
     align-items: center;
     height: 100vh;
     background: #f0f2f5;
+    position: relative;
 }
 
 .login-box {
@@ -35,7 +36,7 @@
     box-sizing: border-box;
 }
 
-.login-box button {
+.b1 {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -47,6 +48,28 @@
     transition: background-color 0.3s ease;
 }
 
-.login-box button:hover {
+.b1:hover {
     background-color: #0056b3;
+}
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back:hover {
+    background-color: #007bff;
+    color: white;
 }

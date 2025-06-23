@@ -3,50 +3,82 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f0f2f5;
+    padding: 20px;
 }
 
 .signup-box {
-    background: white;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease;
 }
 
+
+
 .signup-box h2 {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
 
 .signup-box label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
 }
 
 .signup-box input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 8px;
     box-sizing: border-box;
+    transition: border 0.2s ease;
 }
 
-.signup-box button {
+.signup-box input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.b2 {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #007bff;
-    color: white;
+    color: #fff;
     border: none;
-    border-radius: 6px;
-    font-weight: bold;
+    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.signup-box button:hover {
+.b2:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.back1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease;
+    border: 2px solid black;
+}
+
+.back1:hover {
+    color: #007bff;
 }

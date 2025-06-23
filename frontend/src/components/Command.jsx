@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./Command.css";
 
-
 function Command()
 {
     const [data,changedata]=useState({cmd:"",rate:0});
@@ -24,6 +23,12 @@ function Command()
 
     return(
         <div className="command-container">
+            <button onClick={(e)=>
+                {
+                    e.preventDefault();
+                    navigate(`/recipe/${id}`);
+                }
+            } className="back1">←</button>
             <h3 className="command-heading">Give the commands</h3>
             <input type="text" name="cmd" onChange={alterData} className="command-input"  />
             <h2 className="command-heading">Rate the recipe</h2>

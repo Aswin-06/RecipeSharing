@@ -41,6 +41,12 @@ function Update()
 
     return(
         <div className="update-container">
+            <button onClick={(e)=>
+                {
+                    e.preventDefault();
+                    navigate(`/recipe/${id}`);
+                }
+            } className="back1">←</button>
             <h3 className="update-label">Enter the name of the recipe</h3>
             <input type="text" name="title" onChange={alterData} value={data.title} className="update-input" />
             <h3 className="update-label">Choose the Category</h3>
@@ -77,7 +83,7 @@ function Update()
                                         Authorization:`Bearer ${token}`,
                                         "Content-Type":"application/json"
                                     }
-                                })
+                                });
                                 navigate("/home");
                             } catch (error) {
                                 alert(error.response.data);

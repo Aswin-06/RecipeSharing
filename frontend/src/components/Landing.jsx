@@ -8,7 +8,7 @@ function Landing() {
         <div className="cont">
             <div className="card">
                 <h2>Welcome to the Recipe Sharing Platform</h2>
-                <h4>Please login or register to buy items</h4>
+                <h4>Please login or register to share your recipe</h4>
 
                 <div className="button">
                     <button onClick={(e) => {

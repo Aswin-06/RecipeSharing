@@ -21,7 +21,12 @@ function AddRecipe()
 
     return(
         <div className="add-recipe-container">
-        
+            <button onClick={(e)=>
+                {
+                    e.preventDefault();
+                    navigate("/home");
+                }
+            } className="back1">←</button>
             <h3 className="form-title">Enter the name of the recipe</h3>
             <input className="form-input" type="text" name="title" onChange={alterData} />
             <h3 className="form-title">Choose the Category</h3>
@@ -38,6 +43,14 @@ function AddRecipe()
                 <option value="">Select</option>
                 <option value="dosa.jpg">Dosa</option>
                 <option value="idly.jpg">Idly</option>
+                <option value="biriani.jpg">Biriani</option>
+                <option value="chicken65.jpg">Chicken 65</option>
+                <option value="curdrice.jpg">Curd Rice</option>
+                <option value="noodles.jpg">Noodles</option>
+                <option value="pongal.jpg">Pongal</option>
+                <option value="chickencurry.jpg">Chicken Curry</option>
+                <option value="fishfry.jpg">Fish Fry</option>
+                <option value="payasam.jpg">Payasam</option>
             </select>
             <h3 className="form-title">Add ingredients</h3>
             <input className="form-input" type="text" onChange={(e)=>{changeText(e.target.value)}} />

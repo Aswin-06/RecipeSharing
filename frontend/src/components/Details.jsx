@@ -52,6 +52,12 @@ function Details(){
 
     return(
         <div className="details-container">
+            <button onClick={(e)=>
+                {
+                    e.preventDefault();
+                    navigate("/home");
+                }
+            } className="back1">←</button>
             <img src={`/asserts/${data.image}`} alt={data.title} className="recipe-image" />
             <div className="details-content">
                 <h2>Title : {data.title}</h2>

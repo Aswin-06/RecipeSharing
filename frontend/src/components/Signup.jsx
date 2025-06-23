@@ -14,14 +14,20 @@ function Signup()
 
     return(
         <div className="signup-container">
+            <button onClick={(e)=>
+                {
+                    e.preventDefault();
+                    navigate("/");
+                }
+            } className="back1">←</button>
             <div className="signup-box">
-                <h2>Enter the details</h2>
+                <h2>Sign up</h2>
                 <form>
                     <label>Enter your username</label><br />
                     <input type="text" name="username" onChange={alterData} /><br />
                     <label>Enter your password</label><br />
                     <input type="password" name="password" onChange={alterData} /><br />
-                    <button onClick={async(e)=>
+                    <button className="b2" onClick={async(e)=>
                         {
                             e.preventDefault();
                             if(data.username===""||data.password==="")
