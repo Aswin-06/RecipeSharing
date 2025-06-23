@@ -88,9 +88,10 @@ function Details(){
                                     Authorization:`Bearer ${token}`
                                 }
                             })
+                            navigate("/home");
                         } catch (error) {
                             alert(error.response.data);
-                            navigate("/");
+                            navigate("/home");
                         }
                     }
                     }>Delete recipe</button>
