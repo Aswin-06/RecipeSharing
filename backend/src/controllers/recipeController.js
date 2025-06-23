@@ -15,10 +15,6 @@ exports.putRecipe=async (req,res) => {
 
 exports.delRecipe=async (req,res) => {
     const recipe=await getDataByID(req.params.id);
-    if(!recipe.exists)
-    {
-        return res.status(404).send("recipe not found");
-    }
     await delData(req.params.id);
     return res.status(200).send("recipe deleted successfully");
 }
