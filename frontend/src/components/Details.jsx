@@ -27,12 +27,12 @@ function Details(){
                     changeData(response.data);
                 } catch (error) {
                     alert(error.response.data);
-                    navigate("/")
+                    navigate("/home")
                 }
             }
         }
         fetch();
-    })
+    },[])
 
     useEffect(() => {
         if (String(userid) === String(data.createdBy)) {
@@ -90,7 +90,6 @@ function Details(){
                             })
                             navigate("/home");
                         } catch (error) {
-                            alert(error.response.data);
                             navigate("/home");
                         }
                     }

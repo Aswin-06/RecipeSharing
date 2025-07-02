@@ -25,6 +25,7 @@ function Home()
                     changeData(response.data);
                 } catch (error) {
                     alert(error.response.data);
+                    navigate("/");
                 }
             }
         }
